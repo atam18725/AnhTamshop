@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANH TÂM SHOP</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:linear-gradient(90deg,#ff4fd8,#8a2be2);
+padding:20px;
+text-align:center;
+color:white;
+}
+
+.avatar{
+text-align:center;
+padding:20px;
+}
+
+.avatar img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:15px;
+padding:15px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+position:relative;
+}
+
+.discount{
+position:absolute;
+top:10px;
+left:10px;
+background:#e91e63;
+color:white;
+padding:5px 10px;
+border-radius:8px;
+font-size:12px;
+font-weight:bold;
+}
+
+.installment{
+position:absolute;
+top:10px;
+right:10px;
+background:#eee;
+padding:5px 10px;
+border-radius:8px;
+font-size:12px;
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.info{
+padding:15px;
+}
+
+.name{
+font-size:20px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.price{
+color:#e91e63;
+font-size:28px;
+font-weight:bold;
+}
+
+.old-price{
+text-decoration:line-through;
+color:gray;
+font-size:16px;
+margin-left:8px;
+}
+
+.member{
+background:#e3f2fd;
+color:#1565c0;
+padding:6px;
+border-radius:6px;
+margin-top:8px;
+font-size:13px;
+}
+
+.desc{
+margin-top:10px;
+color:#555;
+}
+
+.bottom{
+display:flex;
+justify-content:space-between;
+margin-top:15px;
+font-size:14px;
+}
+
+.star{
+color:#ff9800;
+font-weight:bold;
+}
+
+.like{
+color:#e91e63;
+font-weight:bold;
+}
+
+.buy{
+width:100%;
+margin-top:15px;
+padding:12px;
+border:none;
+background:linear-gradient(90deg,#ff4fd8,#8a2be2);
+color:white;
+border-radius:30px;
+font-size:16px;
+font-weight:bold;
+}
+
+footer{
+margin-top:20px;
+background:#8a2be2;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💜 ANH TÂM SHOP 💜</h1>
+<p>Uy tín - Chất lượng - Giá tốt</p>
+</header>
+
+<div class="avatar">
+<img src="Avt.jpg">
+<h2>Chào mừng đến với ANH TÂM SHOP</h2>
+</div>
+
+<div class="products">
+
+<div class="card">
+<div class="discount">Giảm 19%</div>
+<div class="installment">Trả góp 0%</div>
+
+<img src="Pic1.jpg">
+
+<div class="info">
+<div class="name">Sản phẩm 1</div>
+
+<div>
+<span class="price">29.990.000₫</span>
+<span class="old-price">36.990.000₫</span>
+</div>
+
+<div class="member">
+Smember giảm đến 300.000₫
+</div>
+
+<div class="member">
+S-Student giảm thêm 500.000₫
+</div>
+
+<div class="desc">
+🔥 Sản phẩm nổi bật được yêu thích nhất
+</div>
+
+<div class="bottom">
+<span class="star">⭐ 4.9</span>
+<span>📦 Đã bán 1.2k</span>
+</div>
+
+<div class="bottom">
+<span class="like">❤️ Yêu thích</span>
+<span>📍 Hồ Chí Minh</span>
+</div>
+
+<button class="buy">MUA NGAY</button>
+</div>
+</div>
+
+<div class="card">
+<div class="discount">Giảm 10%</div>
+<div class="installment">Trả góp 0%</div>
+
+<img src="Pic2.jpg">
+
+<div class="info">
+<div class="name">Sản phẩm 2</div>
+
+<div>
+<span class="price">24.990.000₫</span>
+<span class="old-price">27.990.000₫</span>
+</div>
+
+<div class="member">
+Smember giảm đến 250.000₫
+</div>
+
+<div class="member">
+Tặng voucher 200.000₫
+</div>
+
+<div class="desc">
+✨ Mẫu mới nhất năm nay
+</div>
+
+<div class="bottom">
+<span class="star">⭐ 5.0</span>
+<span>📦 Đã bán 956</span>
+</div>
+
+<div class="bottom">
+<span class="like">❤️ Yêu thích</span>
+<span>📍 Bến Tre</span>
+</div>
+
+<button class="buy">MUA NGAY</button>
+</div>
+</div>
+
+<div class="card">
+<div class="discount">Giảm 25%</div>
+<div class="installment">Trả góp 0%</div>
+
+<img src="Pic3.jpg">
+
+<div class="info">
+<div class="name">Sản phẩm 3</div>
+
+<div>
+<span class="price">19.990.000₫</span>
+<span class="old-price">26.990.000₫</span>
+</div>
+
+<div class="member">
+Giảm thêm 1.000.000₫
+</div>
+
+<div class="member">
+Miễn phí vận chuyển
+</div>
+
+<div class="desc">
+💎 Phiên bản cao cấp giới hạn
+</div>
+
+<div class="bottom">
+<span class="star">⭐ 4.8</span>
+<span>📦 Đã bán 2.5k</span>
+</div>
+
+<div class="bottom">
+<span class="like">❤️ Yêu thích</span>
+<span>📍 Hà Nội</span>
+</div>
+
+<button class="buy">MUA NGAY</button>
+</div>
+</div>
+
+</div>
+
+<footer>
+❤️ Cảm ơn bạn đã ghé thăm ANH TÂM SHOP ❤️
+</footer>
+
+</body>
+</html>
